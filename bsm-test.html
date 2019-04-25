@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Better Select Multiple: Test Page</title>
+    <link rel="stylesheet" href="bsm.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="bsm.js"></script>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="select">The Selector:</label>
+        <select name="select" id="id_select" Multiple>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option>
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+            <option value="9">Nine</option>
+            <option value="10">Ten</option>
+        </select>
+        <label for="select2">The Selector 2 (has 6 and 9 selected by default):</label>
+        <select name="select2" id="id_select2" Multiple>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6" selected>Six</option>
+            <option value="7">Seven</option>
+            <option value="8">Eight</option>
+            <option value="9" selected>Nine</option>
+            <option value="10">Ten</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        make_bsm("id_select")
+        make_bsm("id_select2")
+    </script>
+</body>
+</html>

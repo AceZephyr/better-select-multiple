@@ -1,0 +1,28 @@
+.bsm__selection-display, .bsm__selection-name, .bsm__selection-remove {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bsm__hidden {
+    display: none !important;
+}
+
+.bsm__selection-display {
+    background-color: lightblue;
+    display: inline-block;
+    margin: 4px;
+}
+
+.bsm__selection-name, .bsm__selection-remove {
+    background-color: lightblue;
+    font-size: 12px !important;
+    display: inline-block;
+    padding: 1px;
+    margin: 2px;
+}
+
+.bsm__selection-remove {
+    cursor: pointer;
+}
