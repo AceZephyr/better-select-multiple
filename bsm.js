@@ -33,7 +33,7 @@ function make_bsm(select_multiple_id) {
         })
     })
     _bsm_options[select_multiple_id] = opts
-    var d = $(`<div>`).attr({"id": `_bsm__container__${select_multiple_id}`})
+    var d = $(`<div>`).addClass("bsm__container").attr({"id": `_bsm__container__${select_multiple_id}`})
     d.append($("<div>").addClass("bsm__selected").attr({"id": `_bsm__selected__${select_multiple_id}`}))
     d.append($("<input>").attr({"id": `_bsm__selector__${select_multiple_id}`}).on("keydown", function(event) {if (event.keyCode==13) event.preventDefault()}).autocomplete({
         minLength: 0,
